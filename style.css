@@ -327,9 +327,9 @@ h2 span {
     font-family: "Montserrat", sans-serif;
     line-height: 1.8;
     color: #fff4fb;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.75); /* Darker for maximum contrast */
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 18px;
     margin-top: 8px;
 }
@@ -386,25 +386,26 @@ h2 span {
     .slide {
         grid-template-columns: 1fr;
         min-height: auto;
-        padding: 20px 15px;
+        padding: 10px 15px; /* Tighter padding */
         text-align: center;
-        gap: 10px; /* Reduced gap */
+        gap: 5px; /* Minimal gap */
+        align-items: flex-start; /* Pulled to the top */
     }
     .slide-content { order: 2; width: 100%; padding: 0 10px; }
     .slide-visual {
         order: 1;
-        height: 280px; /* More compact height */
+        height: 250px; /* Hugging the image */
         width: 100%;
-        margin-bottom: 8px; /* Significantly reduced gap between image and text */
+        margin-bottom: 4px; /* Tiny gap */
         padding: 5px;
     }
-    .tag { margin-bottom: 8px; padding: 5px 12px; font-size: 0.85rem; }
-    h2 { font-size: 1.6rem; margin-bottom: 10px; }
+    .tag { margin-bottom: 5px; padding: 4px 10px; font-size: 0.8rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 6px; }
     .message {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 14px;
-        font-size: 1.05rem;
+        margin-bottom: 10px;
+        font-size: 1rem;
         line-height: 1.4;
     }
     .letter-frame {
@@ -425,8 +426,8 @@ h2 span {
         border-radius: 18px;
         width: 96vw;
     }
-    .topbar { padding: 10px 15px; }
-    .topbar h1 { font-size: 1.6rem; }
+    .topbar { padding: 5px 15px; } /* Slimmer topbar */
+    .topbar h1 { font-size: 1.5rem; }
     .greeting-deck {
         gap: 12px;
         padding: 8px;
