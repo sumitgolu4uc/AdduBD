@@ -13,23 +13,13 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 body {
     font-family: "Montserrat", sans-serif;
     color: var(--text-main);
     min-height: 100vh;
-    min-height: 100dvh;
     background: radial-gradient(circle at top right, #8f2ca1 0%, var(--bg-start) 40%, var(--bg-end) 100%);
+    overflow-x: hidden;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 #hearts-bg {
@@ -119,13 +109,12 @@ body {
 
 .slide {
     flex: 0 0 100%;
-    min-height: 60vh;
-    padding: clamp(16px, 2.5vw, 40px);
+    min-height: 68vh;
+    padding: clamp(16px, 2.3vw, 34px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: clamp(16px, 3vw, 40px);
+    gap: clamp(16px, 2vw, 30px);
     align-items: center;
-    width: 100%;
 }
 
 .slide-content {
@@ -387,7 +376,7 @@ h2 span {
     .slide {
         grid-template-columns: 1fr;
         min-height: auto;
-        padding: 25px 15px;
+        padding: 30px 20px;
         text-align: center;
     }
     .slide-content {
@@ -395,73 +384,46 @@ h2 span {
     }
     .slide-visual {
         order: 1;
-        height: 300px;
+        height: 350px;
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .message {
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.1rem;
     }
     .slider-shell {
-        margin: 5px auto;
-        border-radius: 18px;
-        width: 96vw;
+        margin: 10px auto;
+        border-radius: 15px;
     }
     .topbar {
-        padding: 10px 15px;
+        padding: 12px 18px;
     }
     .topbar h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .greeting-deck {
         gap: 15px;
-        padding: 5px;
-        flex-direction: column;
-        align-items: center;
+        padding: 10px;
     }
     .greet-card {
-        min-height: auto;
-        width: 100%;
-        max-width: 380px;
-        padding: 20px;
-    }
-    .letter-frame {
-        padding: 15px;
-        border-radius: 15px;
+        min-height: 180px;
     }
 }
 
 @media (max-width: 480px) {
     .slide-visual {
-        height: 220px;
+        height: 250px;
     }
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .nav-btn {
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         font-size: 1rem;
     }
     .cta {
         width: 100%;
-        padding: 15px;
-    }
-    .tags {
-        font-size: 0.8rem;
-    }
-    .bottom-panel {
-        padding-bottom: 30px;
-    }
-}
-
-@media (max-height: 650px) {
-    .slide-visual {
-        height: 180px;
-    }
-    .slider-shell {
-        margin-top: 0;
     }
 }
